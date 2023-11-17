@@ -6,7 +6,7 @@
     "bin": "./index.js",
     "type": "commonjs",
     "scripts": {
-      "test": "echo \"npui coming soon\""
+      "test": "echo \"npui installer\""
     },
     "repository": {
       "type": "git",
