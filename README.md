@@ -1,1 +1,1 @@
-# npui components library
+# npui test environment
