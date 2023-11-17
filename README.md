@@ -1,1 +1,1 @@
-# npui components
+# npui components installer

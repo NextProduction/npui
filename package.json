@@ -1,0 +1,27 @@
+{
+    "name": "npui",
+    "version": "1.0.1",
+    "description": "Next Production User Interface components for React and Next JS ecosystems",
+    "main": "index.js",
+    "bin": "./index.js",
+    "type": "commonjs",
+    "scripts": {
+      "test": "echo \"npui coming soon\""
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/NextProduction/NPUI.git"
+    },
+    "keywords": [
+      "npui",
+      "nextproduction",
+      "react-components"
+    ],
+    "author": "Mahdi @ Next Production Team",
+    "license": "GPL-3.0",
+    "bugs": {
+      "url": "https://github.com/NextProduction/NPUI/issues"
+    },
+    "homepage": "https://github.com/NextProduction/NPUI#readme"
+
+}
