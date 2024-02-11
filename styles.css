@@ -68,4 +68,8 @@ body {
   a:hover {
     text-decoration: underline;
   }
+
+  .headline{
+    font-weight: bold;
+  }
   
