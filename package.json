@@ -2,6 +2,7 @@
   "name": "npui",
   "version": "1.0.0",
   "private": true,
+  "homepage": "https://nextproduction.dev/npui",
   "scripts": {
     "app": "next dev",
     "build": "next build",

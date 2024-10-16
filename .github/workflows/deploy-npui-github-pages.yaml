@@ -1,5 +1,5 @@
 # Workflow name
-name: Build and Publish NPUI to GitHub Pages
+name: Publish NPUI 
 
 on:
   # Event for the workflow to run on
@@ -21,7 +21,7 @@ jobs:
       # Manual Checkout
       - uses: actions/checkout@v4
 
-      # Set up Node.js (using Node v20)
+      # Set up Node.js (using Node v21)
       - uses: actions/setup-node@v4
         with:
           node-version: '21.x' # Updated to Node.js v20
