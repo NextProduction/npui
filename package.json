@@ -21,6 +21,7 @@
     "@storybook/addon-essentials": "^8.4.0-alpha.7",
     "@storybook/addon-interactions": "^8.4.0-alpha.7",
     "@storybook/addon-onboarding": "^8.4.0-alpha.7",
+    "@storybook/addon-styling-webpack": "^1.0.0",
     "@storybook/blocks": "^8.4.0-alpha.7",
     "@storybook/nextjs": "^8.4.0-alpha.7",
     "@storybook/react": "^8.4.0-alpha.7",
