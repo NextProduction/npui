@@ -24,7 +24,7 @@ jobs:
       # Set up Node.js (using Node v20)
       - uses: actions/setup-node@v4
         with:
-          node-version: '20.x' # Updated to Node.js v20
+          node-version: '21.x' # Updated to Node.js v20
 
       # Install dependencies
       - run: npm ci
@@ -33,6 +33,6 @@ jobs:
       - uses: bitovi/github-actions-storybook-to-github-pages@v1.0.3
         with:
           install_command: npm ci # default: npm ci
-          build_command: npm run build-storybook # default: npm run build-storybook
+          build_command: npm run build-npui # default: npm run build-storybook
           path: storybook-static # default: dist/storybook
           checkout: false # default: true

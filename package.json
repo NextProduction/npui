@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "npui": "storybook dev -p 6006",
-    "buid-npui": "storybook build"
+    "build-npui": "storybook build"
   },
   "dependencies": {
     "next": "14.2.15",
