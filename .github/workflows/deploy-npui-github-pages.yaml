@@ -21,12 +21,15 @@ jobs:
       # Manual Checkout
       - uses: actions/checkout@v4
 
-      # Set up Node
+      # Set up Node.js (using Node v20)
       - uses: actions/setup-node@v4
         with:
-          node-version: '16.x'
+          node-version: '20.x' # Updated to Node.js v20
 
-      #👇 Add Storybook build and deploy to GitHub Pages as a step in the workflow
+      # Install dependencies
+      - run: npm ci
+
+      # Build Storybook and deploy to GitHub Pages
       - uses: bitovi/github-actions-storybook-to-github-pages@v1.0.3
         with:
           install_command: npm ci # default: npm ci
