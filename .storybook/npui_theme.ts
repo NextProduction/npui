@@ -8,9 +8,9 @@ export default create({
 
   // Brand
   brandTitle: "NPUI",
-  brandTarget: "_blank",
-  brandUrl: "https://nextproduction.dev/npui",
-  // brandImage: '@/public/npui_logo.png',
+  // brandTarget: "_blank",
+  // brandImage: './npui.png',
+  // brandUrl: "https://nextproduction.dev/npui",
 
   // Colors
   colorPrimary: '#3A10E5',

@@ -15,9 +15,12 @@ const config: StorybookConfig = {
     name: "@storybook/nextjs",
     options: {},
   },
-
+  features: {
+    backgroundsStoryGlobals: true,
+  },
   core: {
     disableWhatsNewNotifications: true
-  }
+  },
+  staticDirs: ['../public', '../assets'],
 };
 export default config;
