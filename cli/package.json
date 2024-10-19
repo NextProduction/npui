@@ -1,0 +1,44 @@
+{
+  "name": "npui",
+  "version": "2.0.0",
+  "description": "npui - open component library",
+  "main": "main.ts",
+  "bin": {
+    "npui": "./main.ts"
+  },
+  "scripts": {
+    "test": "echo \"Hi, NPUI :)\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NextProduction/npui.git"
+  },
+  "keywords": [
+    "npui",
+    "react-components",
+    "nextproduction",
+    "mahdihazrati",
+    "component-library",
+    "ui-kit",
+    "design-system",
+    "tailwind-components",
+    "ui-components",
+    "npm-package",
+    "nextjs-ui",
+    "nextjs-components",
+    "frontend-library",
+    "react-ui",
+    "nextproduction-dev",
+    "open-source-ui",
+    "storybook",
+    "ui-installer",
+    "tailwind-ui",
+    "react-component-library"
+  ],
+  "author": "Mahdi@NextProduction.dev",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/NextProduction/npui/issues"
+  },
+  "homepage": "https://nextproduction.dev/npui/"
+}
