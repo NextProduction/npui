@@ -1,10 +1,10 @@
 {
   "name": "npui",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "npui - open component library",
-  "main": "main.ts",
+  "main": "main.mjs",
   "bin": {
-    "npui": "./main.ts"
+    "npui": "./main.mjs"
   },
   "scripts": {
     "test": "echo \"Hi, NPUI :)\""
@@ -40,5 +40,8 @@
   "bugs": {
     "url": "https://github.com/NextProduction/npui/issues"
   },
-  "homepage": "https://nextproduction.dev/npui/"
+  "homepage": "https://nextproduction.dev/npui/",
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  }
 }
