@@ -1,6 +1,6 @@
 {
   "name": "npui",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "npui - open component library",
   "main": "main.mjs",
   "bin": {

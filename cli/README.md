@@ -1,76 +1,120 @@
 # 🧩 npui cli
 
-**npui** is a CLI tool for easily adding React components from the **npui** component library to your project. It allows developers to download and install specific components from the `npui` GitHub repository directly into their app's local directory.
+`npui` is a command-line interface (CLI) tool designed for easy integration of reusable UI components into your projects. Built with simplicity and flexibility in mind, `npui` allows developers to quickly add, update, remove, and list components from the NextProduction repository directly in their own projects.
 
 ## Features
 
-- Easily download and add individual components from the **npui** component library.
-- Creates a local `npui` folder in your project to organize components.
-- Simple command-line interface with intuitive usage.
+- **Download Components**: Fetch UI components directly from the GitHub repository.
+- **Update Components**: Keep your components up to date with the latest changes.
+- **Remove Components**: Easily delete components from your project.
+- **List Components**: View all downloaded components at a glance.
+- **Version Info**: Check the current version of `npui`.
+- **Help Command**: Get usage instructions directly from the CLI.
 
 ## Installation
 
-To use **npui**, you need to have [Node.js](https://nodejs.org/) installed on your machine.
+You can install `npui` globally or use it directly with `npx` without installation.
 
-### Step 1: Install via `npx`
+### Using npx
 
-You don't need to install the package globally. Just use it directly with `npx`:
+To use `npui` directly, run the following command:
 
 ```bash
-npx npui add <ComponentName>
+npx npui <command> <ComponentName>
 ```
 
-### Example:
+### Installing Globally
 
-To download the `Table` component from the npui component library and add it to your project:
+If you prefer to install `npui` globally, you can run:
+
+```bash
+npm install -g npui
+```
+
+## Usage
+
+Here's a breakdown of available commands:
+
+### `add <ComponentName>`
+
+Download a specified component to your project.
 
 ```bash
 npx npui add Table
 ```
 
-This will create the following structure in your project:
+### `update <ComponentName>`
 
-```
-your-app/
-│
-├── npui/
-│   └── Table/
-│       └── Table.tsx
+Update an existing component to the latest version.
+
+```bash
+npx npui update Table
 ```
 
-## How It Works
+### `remove <ComponentName>`
 
-- When you run the command `npx npui add <ComponentName>`, the CLI will:
-  - Create an `npui` directory (if it doesn't exist) in your project root.
-  - Download the specified component from the **npui** GitHub repository.
-  - Place the component files in the appropriate folder under the `npui` directory.
+Remove a specified component from your project.
 
-## GitHub Repository
+```bash
+npx npui remove Table
+```
 
-The **npui** components are hosted on GitHub:  
-[NextProduction/npui](https://github.com/NextProduction/npui)
+### `list`
 
-You can browse the available components and their code in the repository.
+List all components downloaded to your project.
 
-## Commands
+```bash
+npx npui list
+```
 
-- **Add a component:**
+### `version`
 
-  ```bash
-  npx npui add <ComponentName>
-  ```
+Display the current version of `npui`.
 
-  Downloads the specified component from the **npui** library and places it in your project.
+```bash
+npx npui version
+```
 
-## Contributing
+### `help`
 
-We welcome contributions! If you'd like to contribute to the **npui** library, please feel free to submit a pull request on our GitHub repository.
+Show usage instructions for `npui`.
 
-## License
+```bash
+npx npui help
+```
 
-This project is licensed under the GPL-3.0-or-later License.
 
----
+## Example
 
-**Maintained by [NextProduction](https://github.com/NextProduction)**  
-Created by [Mahdi Hazrati](https://github.com/mahdi-hazrati)
+Here's a complete example of how to use `npui`:
+
+1. **Add a component**:
+    ```bash
+    npx npui add Button
+    ```
+
+2. **List downloaded components**:
+    ```bash
+    npx npui list
+    ```
+
+3. **Update a component**:
+    ```bash
+    npx npui update Button
+    ```
+
+4. **Remove a component**:
+    ```bash
+    npx npui remove Button
+    ```
+
+## Contribution
+
+Contributions are welcome! If you have suggestions for improvements or want to report bugs, feel free to create an issue or submit a pull request on the [GitHub repository](https://github.com/NextProduction/npui).
+
+
+
+## Acknowledgments
+
+- Thanks to [Node.js](https://nodejs.org/) for providing a powerful platform for building command-line applications.
+- Inspired by the open-source community for fostering collaboration and innovation.
