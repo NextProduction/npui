@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 3.9%; /* npui.background */
+    --foreground: 0 0% 98%; /* npui.foreground */
+    --card: 0 0% 10.2%; /* npui.card */
+    --card-foreground: 0 0% 98%; /* npui.card-foreground */
+    --popover: 0 0% 3.9%; /* npui.background */
+    --popover-foreground: 0 0% 98%; /* npui.foreground */
+    --primary: 29 100% 50%; /* npui.primary.DEFAULT */
+    --primary-foreground: 0 0% 3.9%; /* npui.primary.foreground */
+    --secondary: 0 0% 20%; /* npui.secondary.DEFAULT */
+    --secondary-foreground: 0 0% 98%; /* npui.secondary.foreground */
+    --muted: 0 0% 14.9%; /* npui.muted */
+    --muted-foreground: 0 0% 63.9%; /* npui.muted-foreground */
+    --accent: 39 100% 50%; /* npui.accent.DEFAULT */
+    --accent-foreground: 0 0% 3.9%; /* npui.accent.foreground */
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 14.9%; /* npui.border */
+    --input: 0 0% 14.9%; /* npui.border */
+    --ring: 29 100% 50%; /* npui.primary.DEFAULT */
+    --radius: 0.5rem;
+  }
+}
