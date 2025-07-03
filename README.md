@@ -1,6 +1,6 @@
 # npui - Modern Component Library & Future Design System
 
-![npui Logo](public/placeholder.svg?height=150&width=150&text=npui)
+<!-- ![npui Logo](public/placeholder.svg?height=150&width=150&text=npui) -->
 
 `npui` is a modern, accessible, and highly customizable component library for React, built with Tailwind CSS. Developed and maintained by **Mahdi Hazrati** as part of **Next Production Dev**, `npui` aims to empower developers to accelerate their UI development with a collection of beautiful, production-ready components, hooks, and utilities. Our vision is to evolve `npui` into a comprehensive design system that provides a unified language for design and development.
 
@@ -26,15 +26,15 @@ First, ensure you have `pnpm` installed globally (`npm install -g pnpm`).
 
 Then, you can use `npx` to run the `npui` CLI:
 
-\`\`\`bash
+```bash
 npx @npui/cli add <component-name>
-\`\`\`
+```
 
 For example, to add a Button component:
 
-\`\`\`bash
+```bash
 npx @npui/cli add button
-\`\`\`
+```
 
 This command will copy the component's code directly into your project, usually under `src/components/ui/`, making it fully customizable.
 
@@ -47,9 +47,9 @@ This command will copy the component's code directly into your project, usually 
 
 You can also run the conceptual `init` command to help set up your project:
 
-\`\`\`bash
+```bash
 npx @npui/cli init
-\`\`\`
+```
 
 ## 💡 Usage
 
@@ -57,7 +57,7 @@ npx @npui/cli init
 
 Once a component is added to your project, you can import and use it like any other React component:
 
-\`\`\`tsx
+```tsx
 // components/my-page.tsx
 import { Button } from "@/components/ui/button"; // Or "@/components/npui-components/button" if you moved it
 
@@ -69,7 +69,7 @@ export default function MyPage() {
     </div>
   );
 }
-\`\`\`
+```
 
 Refer to the `/docs` section of the `npui` platform for detailed usage, props, and examples for each component.
 
@@ -77,7 +77,7 @@ Refer to the `/docs` section of the `npui` platform for detailed usage, props, a
 
 Hooks are functions that let you "hook into" React state and lifecycle features from function components.
 
-\`\`\`tsx
+```tsx
 // components/my-component.tsx
 import { useState } from "react";
 import { useDebounce } from "@/hooks/use-debounce"; // Assuming path
@@ -102,7 +102,7 @@ export default function MyComponent() {
     />
   );
 }
-\`\`\`
+```
 
 Explore the `/hooks` section for a full list of available hooks and their usage.
 
@@ -110,7 +110,7 @@ Explore the `/hooks` section for a full list of available hooks and their usage.
 
 Utility functions are standalone helpers for common tasks.
 
-\`\`\`ts
+```ts
 // my-script.ts
 import { capitalize } from "@/lib/utils/capitalize"; // Assuming path
 import { isValidEmail } from "@/lib/utils/is-valid-email"; // Assuming path
@@ -118,7 +118,7 @@ import { isValidEmail } from "@/lib/utils/is-valid-email"; // Assuming path
 console.log(capitalize("hello world")); // Output: "Hello world"
 console.log(isValidEmail("test@example.com")); // Output: true
 console.log(isValidEmail("invalid-email")); // Output: false
-\`\`\`
+```
 
 Check the `/utils` section for all available utilities and their examples.
 
@@ -126,7 +126,7 @@ Check the `/utils` section for all available utilities and their examples.
 
 This project is structured as a monorepo using `pnpm` workspaces:
 
-\`\`\`
+```
 npui-monorepo/
 ├── pnpm-workspace.yaml       # Defines monorepo workspaces
 ├── package.json              # Root package.json for monorepo scripts
@@ -141,15 +141,15 @@ npui-monorepo/
         ├── package.json      # CLI's dependencies and metadata for npm publish
         └── src/
             └── index.ts      # CLI logic (e.g., `add` command)
-\`\`\`
+```
 
 ### Publishing to npm
 
 To publish the `@npui/cli` package to npm, you would navigate to the root of the monorepo and run:
 
-\`\`\`bash
+```bash
 pnpm publish -r --filter=@npui/cli --access public
-\`\`\`
+```
 
 This command tells `pnpm` to recursively publish packages, specifically filtering for the `@npui/cli` package, and setting its access to public.
 
@@ -200,6 +200,6 @@ This project is licensed under the MIT License.
 
 For collaborations, project inquiries, or just to say hello, feel free to reach out to **Mahdi Hazrati** or **Next Production Dev**:
 
-*   **Email:** mahdi.hazrati@example.com (Placeholder)
-*   **Portfolio:** [next-prediction.com](https://next-prediction.com) (Placeholder)
-*   **Telegram:** @your_telegram_username (Placeholder)
+*   **Email:** mahdi@nextproduction.dev
+*   **Portfolio:** [https://nextproduction.dev](https://nextproduction.dev)
+*   **Telegram:** @TheMahdiHazrati

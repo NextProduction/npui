@@ -6,7 +6,7 @@ This document provides guidelines for maintaining and contributing to the `npui`
 
 The `npui` project is organized as a monorepo using `pnpm` workspaces. This structure allows us to manage multiple related packages (the documentation website and the CLI tool) within a single repository.
 
-\`\`\`
+```
 npui-monorepo/
 ├── pnpm-workspace.yaml       # Defines monorepo workspaces
 ├── package.json              # Root package.json for monorepo-wide scripts
@@ -29,33 +29,33 @@ npui-monorepo/
         ├── src/              # CLI source code
         │   └── index.ts      # Main CLI logic
         └── dist/             # Compiled CLI output
-\`\`\`
+```
 
 ## 🚀 Getting Started (for Developers)
 
 1.  **Clone the repository:**
-    \`\`\`bash
+    ```bash
     git clone <your-repo-url>
     cd npui-monorepo
-    \`\`\`
+    ```
 2.  **Install pnpm:** If you don't have `pnpm` installed globally:
-    \`\`\`bash
+    ```bash
     npm install -g pnpm
-    \`\`\`
+    ```
 3.  **Install dependencies:** From the monorepo root:
-    \`\`\`bash
+    ```bash
     pnpm install
-    \`\`\`
+    ```
     This will install dependencies for both `apps/web` and `packages/cli`.
 4.  **Build the CLI:**
-    \`\`\`bash
+    ```bash
     pnpm --filter=@npui/cli build
-    \`\`\`
+    ```
     This compiles the TypeScript code for the CLI.
 5.  **Start the development server (website):**
-    \`\`\`bash
+    ```bash
     pnpm dev
-    \`\`\`
+    ```
     This will start the Next.js development server for the documentation website.
 
 ## 🛠️ Maintenance Tasks
@@ -75,17 +75,17 @@ To publish a new version of the `@npui/cli` to npm:
 
 1.  **Update version:** Increment the `version` in `packages/cli/package.json` according to [Semantic Versioning](https://semver.org/).
 2.  **Build the CLI:** Ensure the latest changes are compiled:
-    \`\`\`bash
+    ```bash
     pnpm --filter=@npui/cli build
-    \`\`\`
+    ```
 3.  **Login to npm:** If you haven't already:
-    \`\`\`bash
+    ```bash
     npm login
-    \`\`\`
+    ```
 4.  **Publish:** From the monorepo root:
-    \`\`\`bash
+    ```bash
     pnpm publish -r --filter=@npui/cli --access public
-    \`\`\`
+    ```
     This command will publish the `@npui/cli` package to the npm registry.
 
 ### Adding/Updating Components
