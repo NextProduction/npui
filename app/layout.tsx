@@ -78,6 +78,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <script defer src="https://platform.analytick.ir/mahdi" data-website-id="9a5fdc7d-abaf-4682-afea-0b918d2745e8"></script>
+      </head>
       <body className={`${inter.className} bg-npui-background text-npui-foreground`}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
           <div className="flex min-h-screen flex-col">
