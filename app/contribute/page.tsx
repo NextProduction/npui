@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { CodePreview } from "@/components/code-preview"
 import { LightbulbIcon, CodeIcon, GitPullRequestIcon, FileTextIcon } from "lucide-react"
+import { Button } from "@/components/ui/button"
 
 export default function ContributePage() {
   const componentDataExample = `// components/npui-components/my-new-component/my-new-component-data.ts

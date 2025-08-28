@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { npuiHooks } from "@/lib/hooks-data"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { LightbulbIcon } from "lucide-react"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 
 export default function HooksPage() {
   return (

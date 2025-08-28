@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation"
 import { npuiHooks } from "@/lib/hooks-data"
-import { HookDocs } from "@/components/hook-docs" // New component for hook documentation
+import { HookDocs } from "@/components/hook-docs"
 
 interface HookPageProps {
   params: {

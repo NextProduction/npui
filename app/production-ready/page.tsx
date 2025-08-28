@@ -2,6 +2,7 @@ import Link from "next/link"
 import { CodePreview } from "@/components/code-preview"
 import { RocketIcon, ScaleIcon, ShieldCheckIcon, BugPlayIcon, CodeIcon, CloudIcon } from "lucide-react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Button } from "@/components/ui/button"
 
 export default function ProductionReadyPage() {
   const dynamicImportCode = `import dynamic from 'next/dynamic';
@@ -36,67 +37,9 @@ export async function GET() {
   const errorBoundaryCode = `// components/error-boundary.tsx
 "use client"
 
-import { Button } from "@/components/ui/button"
-
-import { Button } from "@/components/ui/button"
-
-import { Button } from "@/components/ui/button"
-
-import { Button } from "@/components/ui/button"
-
-import { Button } from "@/components/ui/button"
-
-import { Button } from "@/components/ui/button"
-
-import { Button } from "@/components/ui/button"
-
-import { Button } from "@/components/ui/button"
-
-import { Button } from "@/components/ui/button"
-
-import { Button } from "@/components/ui/button"
-
-import { Button } from "@/components/ui/button"
-
-import { Button } from "@/components/ui/button"
-
-import { Button } from "@/components/ui/button"
-
-import { Button } from "@/components/ui/button"
-
-import { Button } from "@/components/ui/button"
-
-import { Button } from "@/components/ui/button"
-
-import { Button } from "@/components/ui/button"
-
-import { Button } from "@/components/ui/button"
-
-import { Button } from "@/components/ui/button"
-
-import { Button } from "@/components/ui/button"
-
-import { Button } from "@/components/ui/button"
-
-import { Button } from "@/components/ui/button"
-
-import { Button } from "@/components/ui/button"
-
-import { Button } from "@/components/ui/button"
-
-import { Button } from "@/components/ui/button"
-
-import { Button } from "@/components/ui/button"
-
-import { Button } from "@/components/ui/button"
-
-import { Button } from "@/components/ui/button"
-
-import { Button } from "@/components/ui/button"
-
-import { Button } from "@/components/ui/button"
-
 import React from 'react';
+import { Button } from "@/components/ui/button"
+
 
 interface ErrorBoundaryProps {
   children: React.ReactNode;

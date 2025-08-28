@@ -2,6 +2,9 @@
 
 # dependencies
 /node_modules
+apps/web/node_modules
+packages/cli/node_modules
+packages/legacy-cli/node_modules
 
 # next.js
 /.next/

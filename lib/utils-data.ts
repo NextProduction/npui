@@ -1,14 +1,4 @@
-"use client"
-
-import type React from "react"
-
-export interface UtilityDetail {
-  name: string
-  slug: string
-  description: string
-  code: string
-  usageExample?: React.ReactNode // Optional React component for live usage example
-}
+import { UtilityDetail } from "./types";
 
 export const npuiUtilities: UtilityDetail[] = [
   {
